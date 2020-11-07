@@ -8,6 +8,7 @@
 #include <Crypt.au3>
 #include <Array.au3>
 #include <TrayConstants.au3>
+#include <ScrollBarsConstants.au3>
 
 Opt("TrayMenuMode", 3)
 Opt("GUIOnEventMode", 1)
@@ -157,6 +158,9 @@ EndFunc
 
 Func logMsg($msg)
    _GUICtrlEdit_AppendText($statusEdit, @CRLF&$msg)
+   Local $caretPos = StringLen(GUICtrlRead($statusEdit))-(StringLen($msg)+1)
+   _GUICtrlEdit_SetSel($statusEdit, $caretPos, $caretPos+1)
+   _GUICtrlEdit_Scroll($statusEdit, $SB_SCROLLCARET)
    ConsoleWrite($msg&@CRLF)
 EndFunc
 
@@ -201,7 +205,7 @@ Func readConfig()
    Global $photoSaveDir = IniRead($configFilePath, "Settings", "PhotoSaveDir", "Not Set")
    Global $invervalSeconds = IniRead($configFilePath, "Settings", "IntervalSecs", "5")
    Global $hashes = IniReadSection($configFilePath, "PhotoHashes")
-   Global $hideOnClose = IniRead($configFilePath, "Settings", "ConfirmHide", False)
+   Global $confirmHide = IniRead($configFilePath, "Settings", "ConfirmHide", False)
 
    If @error Then
 	  Return
