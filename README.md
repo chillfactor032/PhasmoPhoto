@@ -1,9 +1,9 @@
 # PhasmoPhoto
 An application to save and manage your in-game Phasmophobia photos.
 
-![Demo](http://chillaspect.com/images/phasmophoto/pp_02_demo1.gif)
+![Demo](pp_02_demo1.gif)
 
-#Settings Tab
+# Settings Tab
 
 ![Settings](http://chillaspect.com/images/phasmophoto/phasmophoto02_settings.png)
 
@@ -27,9 +27,9 @@ Be sure to click "Save Settings" when you have everything configured. Settings a
 
 This config file also contains file hashes. These hashes allow PhasmoPhoto to know which photos have already been saved.
 
-#Photos Tab
+# Photos Tab
 
-![Photos](http://chillaspect.com/images/phasmophoto/pp_02_demo2.gif)
+![Photos](pp_02_demo2.gif)
 
 The Photos tab is where you can manage the photos you take in game. There is a list of all the photos saved, sorted descending. Select a photo to view its thumbnail, as well as perform a few actions:
 - Copy to Clipboard
@@ -40,7 +40,7 @@ The Photos tab is where you can manage the photos you take in game. There is a l
 - Delete Photo
 - - This button will delete the currently selected photo.
 
-#Status Tab
+# Status Tab
 
 ![Photos](http://chillaspect.com/images/phasmophoto/phasmophoto02_status.png)
 
@@ -52,7 +52,7 @@ This tab displayed relevant information about PhasmoPhoto, such as when:
 - If Phasmophobia is currently running 
 - - PhasmoPhoto will not check for new photos unless the game is running.
 
-#Other Info
+# Other Info
 
 This application is an AutoIt script compiled to EXE. Your Anti-Virus may complain about PhasmoPhoto. This is due to AutoIt being a common development platform for malicious files and the fact that PhasmoPhoto is a very new (uncommon) application. If you are uncomfortable running the exe, you can always install AutoIt and run phasmophoto.au3 manually.
 
