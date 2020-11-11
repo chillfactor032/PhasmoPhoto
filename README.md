@@ -5,7 +5,7 @@ An application to save and manage your in-game Phasmophobia photos.
 
 # How It Works
 
-When a photo is taken in-game in Phasmophobia, the image gets saved in PNG format in the Phasmophobia install directory. Only 6 images may get saved at a time here and they are in constant rotation. If you forget to copy the picture of that ghost you saw, it will be gone forever after 5 more photos. 
+When a photo is taken in-game in Phasmophobia, the image gets saved in PNG format in the Phasmophobia install directory. Only 6 images may get saved at a time here and they are in constant rotation. If you forget to copy the picture of that ghost you saw, it will be gone forever after 6 more photos. 
 
 PhasmoPhoto works by monitoring this directory in short intervals and copying new photos to a specified location for long-term storage. 
 
