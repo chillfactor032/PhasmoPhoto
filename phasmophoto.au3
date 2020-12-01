@@ -32,7 +32,7 @@ EndIf
 
 ; Title and Version
 $title = "PhasmoPhoto"
-$version = "0.2"
+$version = "0.2.1"
 
 ;Constants
 $GUI_HEIGHT = 500
@@ -184,7 +184,7 @@ Func checkPhotos()
    $hashesToAdd[0] = 0
 
    ;Get a file search handle
-   Local $search = FileFindFirstFile($defaultInstallDir &"/SavedScreen*.png")
+   Local $search = FileFindFirstFile($phasmoInstallDir &"/SavedScreen*.png")
 
    ;If no matches return
    If $search = -1 Then
